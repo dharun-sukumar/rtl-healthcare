@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Portal - WellCare Health & Wellness</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>WellCare</h2>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Home</a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home Classic</a>
+                        <a href="index2.html">Home Modern</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link active">Dashboard</a>
+                    <div class="dropdown-content">
+                        <a href="user-dashboard.html">Patient Portal</a>
+                        <a href="admin-dashboard.html">Admin Panel</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="book-appointment.html" class="nav-link btn-appointment">Book Now</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <button id="rtlToggle" class="rtl-toggle">عربي</button>
+                </li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content dashboard-content">
+        <div class="container">
+            <div class="dashboard-header">
+                <div class="welcome-section">
+                    <h1>Welcome back, Sarah!</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+                <div class="user-profile">
+                    <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100" alt="User Profile" class="profile-image">
+                    <div class="profile-info">
+                        <h3>Sarah Johnson</h3>
+                        <p>Patient ID: P12345</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Next Appointment</h3>
+                        <p>Dec 15, 2025 at 2:00 PM</p>
+                        <small>Lorem ipsum dolor</small>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-prescription-bottle"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Active Prescriptions</h3>
+                        <p>3 medications</p>
+                        <small>Lorem ipsum</small>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Last Visit</h3>
+                        <p>Nov 20, 2025</p>
+                        <small>Lorem ipsum</small>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Outstanding Balance</h3>
+                        <p>$0.00</p>
+                        <small>Lorem ipsum</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>Upcoming Appointments</h3>
+                        <a href="book-appointment.html" class="btn btn-primary btn-sm">Book New</a>
+                    </div>
+                    <div class="appointments-list">
+                        <div class="appointment-item">
+                            <div class="appointment-date">
+                                <div class="date-day">15</div>
+                                <div class="date-month">Dec</div>
+                            </div>
+                            <div class="appointment-details">
+                                <h4>Lorem Ipsum Consultation</h4>
+                                <p>Dr. Sarah Johnson</p>
+                                <span class="appointment-time">2:00 PM - 3:00 PM</span>
+                            </div>
+                            <div class="appointment-actions">
+                                <button class="btn btn-outline btn-sm">Reschedule</button>
+                            </div>
+                        </div>
+                        <div class="appointment-item">
+                            <div class="appointment-date">
+                                <div class="date-day">22</div>
+                                <div class="date-month">Dec</div>
+                            </div>
+                            <div class="appointment-details">
+                                <h4>Lorem Ipsum Check</h4>
+                                <p>Dr. Emily Rodriguez</p>
+                                <span class="appointment-time">10:00 AM - 11:00 AM</span>
+                            </div>
+                            <div class="appointment-actions">
+                                <button class="btn btn-outline btn-sm">Reschedule</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>Recent Test Results</h3>
+                        <a href="#" class="btn btn-outline btn-sm">View All</a>
+                    </div>
+                    <div class="test-results">
+                        <div class="test-item">
+                            <div class="test-info">
+                                <h4>Lorem Ipsum Test</h4>
+                                <p>Nov 20, 2025</p>
+                            </div>
+                            <div class="test-status normal">Normal</div>
+                        </div>
+                        <div class="test-item">
+                            <div class="test-info">
+                                <h4>Lorem Panel</h4>
+                                <p>Nov 20, 2025</p>
+                            </div>
+                            <div class="test-status normal">Normal</div>
+                        </div>
+                        <div class="test-item">
+                            <div class="test-info">
+                                <h4>Lorem Reading</h4>
+                                <p>Dec 1, 2025</p>
+                            </div>
+                            <div class="test-status good">Good</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>Active Prescriptions</h3>
+                        <a href="#" class="btn btn-outline btn-sm">Manage All</a>
+                    </div>
+                    <div class="prescriptions-list">
+                        <div class="prescription-item">
+                            <div class="prescription-info">
+                                <h4>Lorem Ipsum 10mg</h4>
+                                <p>Lorem ipsum dolor sit amet</p>
+                                <span class="refill-date">Refill by: Dec 20, 2025</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm">Refill</button>
+                        </div>
+                        <div class="prescription-item">
+                            <div class="prescription-info">
+                                <h4>Lorem D3</h4>
+                                <p>Lorem ipsum dolor sit amet</p>
+                                <span class="refill-date">Refill by: Jan 5, 2026</span>
+                            </div>
+                            <button class="btn btn-outline btn-sm">View</button>
+                        </div>
+                        <div class="prescription-item">
+                            <div class="prescription-info">
+                                <h4>Lorem 500mg</h4>
+                                <p>Lorem ipsum dolor sit amet</p>
+                                <span class="refill-date">Refill by: Dec 25, 2025</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm">Refill</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>Health Metrics</h3>
+                        <a href="#" class="btn btn-outline btn-sm">View Trends</a>
+                    </div>
+                    <div class="health-metrics">
+                        <div class="metric-item">
+                            <div class="metric-label">Blood Pressure</div>
+                            <div class="metric-value">120/80</div>
+                            <div class="metric-status normal">Normal</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-label">Weight</div>
+                            <div class="metric-value">145 lbs</div>
+                            <div class="metric-status stable">Stable</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-label">Heart Rate</div>
+                            <div class="metric-value">72 bpm</div>
+                            <div class="metric-status normal">Normal</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-label">BMI</div>
+                            <div class="metric-value">22.5</div>
+                            <div class="metric-status normal">Healthy</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card full-width">
+                    <div class="card-header">
+                        <h3>Messages & Notifications</h3>
+                        <a href="#" class="btn btn-outline btn-sm">Mark All Read</a>
+                    </div>
+                    <div class="messages-list">
+                        <div class="message-item unread">
+                            <div class="message-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="message-content">
+                                <h4>Appointment Reminder</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+                                <span class="message-time">2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="message-item">
+                            <div class="message-icon">
+                                <i class="fas fa-prescription-bottle"></i>
+                            </div>
+                            <div class="message-content">
+                                <h4>Prescription Ready</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+                                <span class="message-time">1 day ago</span>
+                            </div>
+                        </div>
+                        <div class="message-item">
+                            <div class="message-icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <div class="message-content">
+                                <h4>Test Results Available</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod.</p>
+                                <span class="message-time">3 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3>Quick Actions</h3>
+                    </div>
+                    <div class="quick-actions">
+                        <a href="book-appointment.html" class="action-btn">
+                            <span class="action-icon">
+                                <i class="fas fa-calendar-plus"></i>
+                            </span>
+                            <span>Book Appointment</span>
+                        </a>
+                        <a href="#" class="action-btn">
+                            <span class="action-icon">
+                                <i class="fas fa-comments"></i>
+                            </span>
+                            <span>Message Doctor</span>
+                        </a>
+                        <a href="#" class="action-btn">
+                            <span class="action-icon">
+                                <i class="fas fa-prescription-bottle"></i>
+                            </span>
+                            <span>Request Refill</span>
+                        </a>
+                        <a href="#" class="action-btn">
+                            <span class="action-icon">
+                                <i class="fas fa-file-medical"></i>
+                            </span>
+                            <span>View Records</span>
+                        </a>
+                        <a href="#" class="action-btn">
+                            <span class="action-icon">
+                                <i class="fas fa-credit-card"></i>
+                            </span>
+                            <span>Pay Bill</span>
+                        </a>
+                        <a href="#" class="action-btn">
+                            <span class="action-icon">
+                                <i class="fas fa-cog"></i>
+                            </span>
+                            <span>Account Settings</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WellCare</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="social-links">
+                        <a href="#">FB</a>
+                        <a href="#">IG</a>
+                        <a href="#">TW</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">General Medicine</a></li>
+                        <li><a href="services.html">Wellness & Spa</a></li>
+                        <li><a href="services.html">Fitness Programs</a></li>
+                        <li><a href="services.html">Specialist Care</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="book-appointment.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#hipaa">HIPAA Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 WellCare Health & Wellness Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="rtl-toggle.js"></script>
+</body>
+</html>

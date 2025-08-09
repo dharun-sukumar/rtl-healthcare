@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - WellCare Health & Wellness</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>WellCare</h2>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Home</a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home Classic</a>
+                        <a href="index2.html">Home Modern</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Dashboard</a>
+                    <div class="dropdown-content">
+                        <a href="user-dashboard.html">Patient Portal</a>
+                        <a href="admin-dashboard.html">Admin Panel</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="book-appointment.html" class="nav-link btn-appointment">Book Now</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <button id="rtlToggle" class="rtl-toggle">عربي</button>
+                </li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <h1>Contact WellCare</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Visit Us</h3>
+                        <p>Lorem ipsum dolor sit amet<br>Consectetur adipiscing elit<br>Sed do eiusmod 12345</p>
+                        <p class="contact-hours">Lorem ipsum dolor sit amet</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p><strong>Main:</strong> Lorem ipsum</p>
+                        <p><strong>Emergency:</strong> Lorem ipsum</p>
+                        <p><strong>Appointments:</strong> Lorem ipsum</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p><strong>General:</strong> lorem@ipsum.com</p>
+                        <p><strong>Appointments:</strong> dolor@ipsum.com</p>
+                        <p><strong>Emergency:</strong> sit@ipsum.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-form-container">
+                        <h2>Send Us a Message</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="appointment">Schedule Appointment</option>
+                                    <option value="medical-inquiry">Medical Inquiry</option>
+                                    <option value="insurance">Insurance Questions</option>
+                                    <option value="billing">Billing Support</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Please describe your inquiry or how we can help you..."></textarea>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="privacy" name="privacy" required>
+                                    <span class="checkmark"></span>
+                                    I agree to the Privacy Policy and Terms of Service
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-additional">
+                        <div class="hours-card">
+                            <h3>Business Hours</h3>
+                            <div class="hours-list">
+                                <div class="hours-item">
+                                    <span>Monday - Friday</span>
+                                    <span>Lorem - Lorem</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span>Saturday</span>
+                                    <span>Lorem - Lorem</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span>Sunday</span>
+                                    <span>Lorem - Lorem</span>
+                                </div>
+                                <div class="hours-item emergency">
+                                    <span>Emergency Care</span>
+                                    <span>Lorem Available</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="emergency-contact">
+                            <h3>Emergency Contact</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                            <a href="tel:911" class="btn btn-emergency">Call 911</a>
+                        </div>
+
+                        <div class="insurance-info">
+                            <h3>Insurance Accepted</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit:</p>
+                            <ul>
+                                <li>Lorem ipsum dolor</li>
+                                <li>Consectetur adipiscing</li>
+                                <li>Sed do eiusmod</li>
+                                <li>Tempor incididunt</li>
+                                <li>Ut labore et dolore</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h2>Find Us</h2>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <p>Interactive Map</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                        <p>Lorem ipsum available | Lorem accessible</p>
+                        <a href="https://maps.google.com" target="_blank" class="btn btn-outline">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WellCare</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="social-links">
+                        <a href="#">FB</a>
+                        <a href="#">IG</a>
+                        <a href="#">TW</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">General Medicine</a></li>
+                        <li><a href="services.html">Wellness & Spa</a></li>
+                        <li><a href="services.html">Fitness Programs</a></li>
+                        <li><a href="services.html">Specialist Care</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="book-appointment.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#hipaa">HIPAA Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 WellCare Health & Wellness Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="rtl-toggle.js"></script>
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellCare - Modern Health & Wellness</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>WellCare</h2>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link active">Home</a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home Classic</a>
+                        <a href="index2.html">Home Modern</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Dashboard</a>
+                    <div class="dropdown-content">
+                        <a href="user-dashboard.html">Patient Portal</a>
+                        <a href="admin-dashboard.html">Admin Panel</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="book-appointment.html" class="nav-link btn-appointment">Book Now</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <button id="rtlToggle" class="rtl-toggle">عربي</button>
+                </li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Modern Hero Section -->
+        <section class="hero-modern">
+            <div class="hero-background">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                    <div class="shape shape-4"></div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="hero-modern-content">
+                    <div class="hero-text-section">
+                        <span class="hero-badge-modern">
+                            Next-Generation Healthcare
+                        </span>
+                        
+                        <h1 class="hero-title-modern">
+                            Transform Your Health with 
+                            <span class="gradient-text">AI-Powered</span> 
+                            Wellness Solutions
+                        </h1>
+                        
+                        <p class="hero-subtitle-modern">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                        </p>
+                        
+                        <div class="hero-buttons-modern">
+                            <a href="book-appointment.html" class="btn-modern btn-primary-modern">
+                                <span>Start Your Journey</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <a href="#features" class="btn-modern btn-secondary-modern">
+                                <span>Explore Features</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="21 21l-4.35-4.35"/>
+                                </svg>
+                            </a>
+                        </div>
+                        
+                        <div class="hero-stats-modern">
+                            <div class="stat-modern">
+                                <div class="stat-number-modern">98%</div>
+                                <div class="stat-label-modern">Patient Satisfaction</div>
+                            </div>
+                            <div class="stat-modern">
+                                <div class="stat-number-modern">50K+</div>
+                                <div class="stat-label-modern">Lives Transformed</div>
+                            </div>
+                            <div class="stat-modern">
+                                <div class="stat-number-modern">24/7</div>
+                                <div class="stat-label-modern">AI Health Assistant</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-visual-section">
+                        <div class="hero-image-modern">
+                            <img src="https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Modern Healthcare Technology">
+                            <div class="image-overlay">
+                                <div class="tech-badge">
+                                    <span>AI-Powered</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="floating-cards">
+                            <div class="floating-card card-1">
+                                <div class="card-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-title">Health Analytics</div>
+                                    <div class="card-value">Real-time insights</div>
+                                </div>
+                            </div>
+                            
+                            <div class="floating-card card-2">
+                                <div class="card-icon">
+                                    <i class="fas fa-prescription-bottle-medical"></i>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-title">Smart Prescriptions</div>
+                                    <div class="card-value">AI-optimized</div>
+                                </div>
+                            </div>
+                            
+                            <div class="floating-card card-3">
+                                <div class="card-icon">
+                                    <i class="fas fa-heart-pulse"></i>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-title">Precision Care</div>
+                                    <div class="card-value">Personalized</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modern Features Section -->
+        <section id="features" class="features-section-modern">
+            <div class="container">
+                <div class="section-header-modern">
+                    <span class="section-badge">Innovation</span>
+                    <h2 class="section-title-modern">Why Choose Modern WellCare</h2>
+                    <p class="section-subtitle-modern">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+                
+                <div class="features-grid-modern">
+                    <div class="feature-card-modern">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon-modern">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                        </div>
+                        <h3>AI-Powered Diagnostics</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="feature-link">
+                            <span>Learn More</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card-modern">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon-modern">
+                                <i class="fas fa-video"></i>
+                            </div>
+                        </div>
+                        <h3>Telemedicine Platform</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="feature-link">
+                            <span>Learn More</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card-modern">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon-modern">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                        </div>
+                        <h3>Health Analytics</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="feature-link">
+                            <span>Learn More</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card-modern">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon-modern">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                        </div>
+                        <h3>Instant Results</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="feature-link">
+                            <span>Learn More</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Showcase -->
+        <section class="tech-showcase">
+            <div class="container">
+                <div class="tech-content">
+                    <div class="tech-text">
+                        <span class="section-badge">Technology</span>
+                        <h2>Powered by Advanced Technology</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                        
+                        <div class="tech-features">
+                            <div class="tech-feature">
+                                <div class="tech-feature-icon">
+                                    <i class="fas fa-dna"></i>
+                                </div>
+                                <div class="tech-feature-content">
+                                    <h4>Genomic Analysis</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                                </div>
+                            </div>
+                            
+                            <div class="tech-feature">
+                                <div class="tech-feature-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="tech-feature-content">
+                                    <h4>Predictive Analytics</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                                </div>
+                            </div>
+                            
+                            <div class="tech-feature">
+                                <div class="tech-feature-icon">
+                                    <i class="fas fa-network-wired"></i>
+                                </div>
+                                <div class="tech-feature-content">
+                                    <h4>IoT Integration</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="services.html" class="btn-modern btn-outline-modern">
+                            <span>Explore Our Technology</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <div class="tech-visual">
+                        <div class="tech-circle">
+                            <div class="tech-center">
+                                <div class="tech-center-icon">
+                                    <i class="fas fa-heartbeat"></i>
+                                </div>
+                                <div class="tech-center-text">AI Core</div>
+                            </div>
+                            
+                            <div class="tech-orbit orbit-1">
+                                <div class="tech-node node-1">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Analytics</span>
+                                </div>
+                                <div class="tech-node node-2">
+                                    <i class="fas fa-microscope"></i>
+                                    <span>Diagnostics</span>
+                                </div>
+                                <div class="tech-node node-3">
+                                    <i class="fas fa-heart-pulse"></i>
+                                    <span>Monitoring</span>
+                                </div>
+                            </div>
+                            
+                            <div class="tech-orbit orbit-2">
+                                <div class="tech-node node-4">
+                                    <i class="fas fa-video"></i>
+                                    <span>Telemedicine</span>
+                                </div>
+                                <div class="tech-node node-5">
+                                    <i class="fas fa-file-medical"></i>
+                                    <span>Records</span>
+                                </div>
+                                <div class="tech-node node-6">
+                                    <i class="fas fa-pills"></i>
+                                    <span>Prescriptions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-modern">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item modern">
+                        <h3>98%</h3>
+                        <p>Patient Satisfaction</p>
+                    </div>
+                    <div class="stat-item modern">
+                        <h3>100K+</h3>
+                        <p>Digital Consultations</p>
+                    </div>
+                    <div class="stat-item modern">
+                        <h3>24/7</h3>
+                        <p>AI Health Assistant</p>
+                    </div>
+                    <div class="stat-item modern">
+                        <h3>50+</h3>
+                        <p>Health Specialists</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WellCare</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="social-links">
+                        <a href="#">FB</a>
+                        <a href="#">IG</a>
+                        <a href="#">TW</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">General Medicine</a></li>
+                        <li><a href="services.html">Wellness & Spa</a></li>
+                        <li><a href="services.html">Fitness Programs</a></li>
+                        <li><a href="services.html">Specialist Care</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="book-appointment.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#hipaa">HIPAA Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 WellCare Health & Wellness Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="rtl-toggle.js"></script>
+</body>
+</html>

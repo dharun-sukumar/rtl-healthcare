@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - WellCare Health & Wellness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>WellCare</h2>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Home</a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home Classic</a>
+                        <a href="index2.html">Home Modern</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Dashboard</a>
+                    <div class="dropdown-content">
+                        <a href="user-dashboard.html">Patient Portal</a>
+                        <a href="admin-dashboard.html">Admin Panel</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="book-appointment.html" class="nav-link btn-appointment">Book Now</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link active">Login</a>
+                </li>
+                <li class="nav-item">
+                    <button id="rtlToggle" class="rtl-toggle">عربي</button>
+                </li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="login-section">
+            <div class="container">
+                <div class="login-container">
+                    <div class="login-header">
+                        <h1>Welcome Back</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+                    </div>
+
+                    <div class="login-tabs">
+                        <button class="tab-btn active" data-tab="patient">Patient Login</button>
+                        <button class="tab-btn" data-tab="admin">Staff Login</button>
+                    </div>
+
+                    <div class="login-forms">
+                        <!-- Patient Login Form -->
+                        <form class="login-form active" id="patientLogin">
+                            <div class="form-group">
+                                <label for="patientEmail">Email Address</label>
+                                <input type="email" id="patientEmail" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="patientPassword">Password</label>
+                                <input type="password" id="patientPassword" name="password" required>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="rememberMe" name="rememberMe">
+                                    <span class="checkmark"></span>
+                                    Remember me
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary full-width">Sign In</button>
+                            <div class="form-links">
+                                <a href="#forgot-password">Forgot Password?</a>
+                                <a href="#register">Create Account</a>
+                            </div>
+                        </form>
+
+                        <!-- Admin/Staff Login Form -->
+                        <form class="login-form" id="adminLogin">
+                            <div class="form-group">
+                                <label for="adminUsername">Username</label>
+                                <input type="text" id="adminUsername" name="username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="adminPassword">Password</label>
+                                <input type="password" id="adminPassword" name="password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="adminRole">Role</label>
+                                <select id="adminRole" name="role" required>
+                                    <option value="">Select Role</option>
+                                    <option value="admin">Administrator</option>
+                                    <option value="doctor">Doctor</option>
+                                    <option value="nurse">Nurse</option>
+                                    <option value="staff">Staff</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary full-width">Sign In</button>
+                            <div class="form-links">
+                                <a href="#forgot-password">Forgot Password?</a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="login-features">
+                        <h3>Patient Portal Features</h3>
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <span class="feature-icon">Cal</span>
+                                <span>Schedule Appointments</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">Rec</span>
+                                <span>View Medical Records</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">Rx</span>
+                                <span>Prescription Refills</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">Msg</span>
+                                <span>Message Your Doctor</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">Pay</span>
+                                <span>Pay Bills Online</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">Data</span>
+                                <span>Track Health Metrics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="register-prompt">
+                        <div class="register-card">
+                            <h3>New Patient?</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                            <a href="#register" class="btn btn-outline">Create Account</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="security-info">
+            <div class="container">
+                <div class="security-content">
+                    <h2>Your Privacy & Security</h2>
+                    <div class="security-features">
+                        <div class="security-item">
+                            <h4>HIPAA Compliant</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        <div class="security-item">
+                            <h4>Encrypted Data</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        <div class="security-item">
+                            <h4>Secure Access</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                        <div class="security-item">
+                            <h4>Privacy First</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WellCare</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="social-links">
+                        <a href="#">FB</a>
+                        <a href="#">IG</a>
+                        <a href="#">TW</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">General Medicine</a></li>
+                        <li><a href="services.html">Wellness & Spa</a></li>
+                        <li><a href="services.html">Fitness Programs</a></li>
+                        <li><a href="services.html">Specialist Care</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="book-appointment.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#hipaa">HIPAA Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 WellCare Health & Wellness Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="rtl-toggle.js"></script>
+</body>
+</html>

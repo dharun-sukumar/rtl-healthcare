@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - WellCare Health & Wellness</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>WellCare</h2>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Home</a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home Classic</a>
+                        <a href="index2.html">Home Modern</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link active">Dashboard</a>
+                    <div class="dropdown-content">
+                        <a href="user-dashboard.html">Patient Portal</a>
+                        <a href="admin-dashboard.html">Admin Panel</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="book-appointment.html" class="nav-link btn-appointment">Book Now</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                    <button id="rtlToggle" class="rtl-toggle">عربي</button>
+                </li>
+            </ul>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content admin-dashboard">
+        <div class="container">
+            <div class="admin-header">
+                <div class="admin-welcome">
+                    <h1>Admin Dashboard</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div class="admin-actions">
+                    <button class="btn btn-primary">Add New Patient</button>
+                    <button class="btn btn-outline">Emergency Alert</button>
+                </div>
+            </div>
+
+            <div class="admin-stats">
+                <div class="stat-card admin">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Today's Patients</h3>
+                        <p class="stat-number">24</p>
+                        <small class="stat-change positive">Lorem ipsum</small>
+                    </div>
+                </div>
+                <div class="stat-card admin">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Appointments</h3>
+                        <p class="stat-number">18</p>
+                        <small class="stat-change">Lorem ipsum</small>
+                    </div>
+                </div>
+                <div class="stat-card admin">
+                    <div class="stat-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Today's Revenue</h3>
+                        <p class="stat-number">$4,250</p>
+                        <small class="stat-change positive">Lorem ipsum</small>
+                    </div>
+                </div>
+                <div class="stat-card admin">
+                    <div class="stat-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Urgent Cases</h3>
+                        <p class="stat-number">2</p>
+                        <small class="stat-change">Lorem ipsum</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="admin-grid">
+                <div class="admin-card">
+                    <div class="card-header">
+                        <h3>Today's Schedule</h3>
+                        <div class="card-actions">
+                            <button class="btn btn-sm btn-outline">View Calendar</button>
+                        </div>
+                    </div>
+                    <div class="schedule-list">
+                        <div class="schedule-item urgent">
+                            <div class="schedule-time">08:00 AM</div>
+                            <div class="schedule-details">
+                                <h4>Lorem Consultation</h4>
+                                <p>John Smith (ID: P001)</p>
+                                <span class="schedule-type urgent">Urgent</span>
+                            </div>
+                            <div class="schedule-actions">
+                                <button class="btn btn-sm btn-primary">View</button>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">09:00 AM</div>
+                            <div class="schedule-details">
+                                <h4>Lorem Physical</h4>
+                                <p>Sarah Davis (ID: P002)</p>
+                                <span class="schedule-type routine">Routine</span>
+                            </div>
+                            <div class="schedule-actions">
+                                <button class="btn btn-sm btn-outline">View</button>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">10:30 AM</div>
+                            <div class="schedule-details">
+                                <h4>Lorem Visit</h4>
+                                <p>Michael Chen (ID: P003)</p>
+                                <span class="schedule-type follow-up">Follow-up</span>
+                            </div>
+                            <div class="schedule-actions">
+                                <button class="btn btn-sm btn-outline">View</button>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <div class="schedule-time">02:00 PM</div>
+                            <div class="schedule-details">
+                                <h4>Lorem Consultation</h4>
+                                <p>Emily Rodriguez (ID: P004)</p>
+                                <span class="schedule-type specialist">Specialist</span>
+                            </div>
+                            <div class="schedule-actions">
+                                <button class="btn btn-sm btn-outline">View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="admin-card">
+                    <div class="card-header">
+                        <h3>Patient Queue</h3>
+                        <div class="card-actions">
+                            <button class="btn btn-sm btn-primary">Next Patient</button>
+                        </div>
+                    </div>
+                    <div class="patient-queue">
+                        <div class="queue-item current">
+                            <div class="queue-status">Current</div>
+                            <div class="queue-details">
+                                <h4>John Smith</h4>
+                                <p>Lorem ipsum dolor</p>
+                                <span class="queue-time">Lorem ipsum</span>
+                            </div>
+                        </div>
+                        <div class="queue-item waiting">
+                            <div class="queue-status">Waiting</div>
+                            <div class="queue-details">
+                                <h4>Sarah Davis</h4>
+                                <p>Lorem ipsum dolor</p>
+                                <span class="queue-time">Lorem ipsum</span>
+                            </div>
+                        </div>
+                        <div class="queue-item next">
+                            <div class="queue-status">Next</div>
+                            <div class="queue-details">
+                                <h4>Michael Chen</h4>
+                                <p>Lorem ipsum</p>
+                                <span class="queue-time">Lorem ipsum</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="admin-card">
+                    <div class="card-header">
+                        <h3>Recent Lab Results</h3>
+                        <div class="card-actions">
+                            <button class="btn btn-sm btn-outline">View All</button>
+                        </div>
+                    </div>
+                    <div class="lab-results">
+                        <div class="lab-item">
+                            <div class="lab-patient">
+                                <h4>Emma Wilson</h4>
+                                <p>Lorem Ipsum Test</p>
+                            </div>
+                            <div class="lab-status abnormal">Abnormal</div>
+                            <div class="lab-actions">
+                                <button class="btn btn-sm btn-primary">Review</button>
+                            </div>
+                        </div>
+                        <div class="lab-item">
+                            <div class="lab-patient">
+                                <h4>Robert Brown</h4>
+                                <p>Lorem Panel</p>
+                            </div>
+                            <div class="lab-status normal">Normal</div>
+                            <div class="lab-actions">
+                                <button class="btn btn-sm btn-outline">View</button>
+                            </div>
+                        </div>
+                        <div class="lab-item">
+                            <div class="lab-patient">
+                                <h4>Lisa Johnson</h4>
+                                <p>Lorem Function</p>
+                            </div>
+                            <div class="lab-status pending">Pending</div>
+                            <div class="lab-actions">
+                                <button class="btn btn-sm btn-outline">Check</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="admin-card">
+                    <div class="card-header">
+                        <h3>Staff Status</h3>
+                        <div class="card-actions">
+                            <button class="btn btn-sm btn-outline">Manage Staff</button>
+                        </div>
+                    </div>
+                    <div class="staff-status">
+                        <div class="staff-member available">
+                            <div class="staff-avatar">
+                                <img src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=60" alt="Dr. Sarah Johnson">
+                            </div>
+                            <div class="staff-info">
+                                <h4>Dr. Sarah Johnson</h4>
+                                <p>Lorem Ipsum Officer</p>
+                                <span class="staff-status-badge available">Available</span>
+                            </div>
+                        </div>
+                        <div class="staff-member busy">
+                            <div class="staff-avatar">
+                                <img src="https://images.pexels.com/photos/5452268/pexels-photo-5452268.jpeg?auto=compress&cs=tinysrgb&w=60" alt="Dr. Michael Chen">
+                            </div>
+                            <div class="staff-info">
+                                <h4>Dr. Michael Chen</h4>
+                                <p>Lorem Specialist</p>
+                                <span class="staff-status-badge busy">Lorem Status</span>
+                            </div>
+                        </div>
+                        <div class="staff-member available">
+                            <div class="staff-avatar">
+                                <img src="https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=60" alt="Nurse Emily">
+                            </div>
+                            <div class="staff-info">
+                                <h4>Emily Rodriguez</h4>
+                                <p>Lorem Nurse</p>
+                                <span class="staff-status-badge available">Available</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="admin-card full-width">
+                    <div class="card-header">
+                        <h3>System Alerts & Notifications</h3>
+                        <div class="card-actions">
+                            <button class="btn btn-sm btn-outline">Mark All Read</button>
+                        </div>
+                    </div>
+                    <div class="alerts-list">
+                        <div class="alert-item critical">
+                            <div class="alert-icon">
+                                <i class="fas fa-exclamation-circle"></i>
+                            </div>
+                            <div class="alert-content">
+                                <h4>Critical Lab Result</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+                                <span class="alert-time">10 minutes ago</span>
+                            </div>
+                            <div class="alert-actions">
+                                <button class="btn btn-sm btn-primary">Review</button>
+                            </div>
+                        </div>
+                        <div class="alert-item warning">
+                            <div class="alert-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="alert-content">
+                                <h4>Equipment Maintenance Due</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+                                <span class="alert-time">1 hour ago</span>
+                            </div>
+                            <div class="alert-actions">
+                                <button class="btn btn-sm btn-outline">Schedule</button>
+                            </div>
+                        </div>
+                        <div class="alert-item info">
+                            <div class="alert-icon">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <div class="alert-content">
+                                <h4>Medication Restock</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod.</p>
+                                <span class="alert-time">2 hours ago</span>
+                            </div>
+                            <div class="alert-actions">
+                                <button class="btn btn-sm btn-outline">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="admin-card">
+                    <div class="card-header">
+                        <h3>Quick Actions</h3>
+                    </div>
+                    <div class="admin-quick-actions">
+                        <button class="action-btn">
+                            <span class="action-icon">
+                                <i class="fas fa-user-plus"></i>
+                            </span>
+                            <span>Add Patient</span>
+                        </button>
+                        <button class="action-btn">
+                            <span class="action-icon">
+                                <i class="fas fa-calendar-plus"></i>
+                            </span>
+                            <span>Schedule Appointment</span>
+                        </button>
+                        <button class="action-btn">
+                            <span class="action-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </span>
+                            <span>View Reports</span>
+                        </button>
+                        <button class="action-btn">
+                            <span class="action-icon">
+                                <i class="fas fa-prescription-bottle"></i>
+                            </span>
+                            <span>Manage Prescriptions</span>
+                        </button>
+                        <button class="action-btn">
+                            <span class="action-icon">
+                                <i class="fas fa-bed"></i>
+                            </span>
+                            <span>Room Management</span>
+                        </button>
+                        <button class="action-btn">
+                            <span class="action-icon">
+                                <i class="fas fa-analytics"></i>
+                            </span>
+                            <span>Analytics</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WellCare</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="social-links">
+                        <a href="#">FB</a>
+                        <a href="#">IG</a>
+                        <a href="#">TW</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">General Medicine</a></li>
+                        <li><a href="services.html">Wellness & Spa</a></li>
+                        <li><a href="services.html">Fitness Programs</a></li>
+                        <li><a href="services.html">Specialist Care</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="book-appointment.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#hipaa">HIPAA Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 WellCare Health & Wellness Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="rtl-toggle.js"></script>
+</body>
+</html>

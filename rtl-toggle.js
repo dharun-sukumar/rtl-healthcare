@@ -48,8 +48,8 @@ function initializeRTLToggle() {
         // Update navigation alignment
         updateNavigationAlignment(direction);
         
-        // Update form placeholders if needed
-        updateFormPlaceholders(direction);
+    // Update form placeholders if needed
+    // updateFormPlaceholders(direction); // Disabled: do not change placeholder language
         
         // Trigger custom event for other components
         window.dispatchEvent(new CustomEvent('directionChange', {
@@ -101,39 +101,8 @@ function initializeRTLToggle() {
     }
     
     function updateFormPlaceholders(direction) {
-        const placeholders = {
-            'ltr': {
-                'أدخل عنوان بريدك الإلكتروني': 'Enter your email address',
-                'أدخل اسمك الأول': 'Enter your first name',
-                'أدخل اسمك الأخير': 'Enter your last name',
-                'أدخل رقم هاتفك': 'Enter your phone number',
-                'أدخل رسالتك': 'Enter your message',
-                'يرجى وصف استفسارك': 'Please describe your inquiry or how we can help you...',
-                'يرجى وصف سبب زيارتك': 'Please describe the reason for your visit or any specific concerns...'
-            },
-            'rtl': {
-                'Enter your email address': 'أدخل عنوان بريدك الإلكتروني',
-                'Enter your first name': 'أدخل اسمك الأول',
-                'Enter your last name': 'أدخل اسمك الأخير',
-                'Enter your phone number': 'أدخل رقم هاتفك',
-                'Enter your message': 'أدخل رسالتك',
-                'Please describe your inquiry or how we can help you...': 'يرجى وصف استفسارك أو كيف يمكننا مساعدتك...',
-                'Please describe the reason for your visit or any specific concerns...': 'يرجى وصف سبب زيارتك أو أي مخاوف محددة...'
-            }
-        };
-        
-        const inputs = document.querySelectorAll('input[placeholder], textarea[placeholder]');
-        inputs.forEach(input => {
-            const currentPlaceholder = input.getAttribute('placeholder');
-            const translations = placeholders[direction];
-            
-            // Find matching placeholder and update
-            Object.keys(translations).forEach(key => {
-                if (currentPlaceholder && currentPlaceholder.includes(key)) {
-                    input.setAttribute('placeholder', translations[key]);
-                }
-            });
-        });
+        // Placeholder translation disabled
+        // This function intentionally left blank
     }
     
     function showDirectionChangeNotification(message) {

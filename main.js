@@ -14,30 +14,60 @@ document.addEventListener('DOMContentLoaded', function() {
 // Navigation functionality
 function initializeNavigation() {
     const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('navMenu');
+    const desktopNavMenu = document.getElementById('navMenu');
+    const mobileNavMenu = document.getElementById('mobileNavMenu');
     
-    if (hamburger && navMenu) {
+    if (hamburger && mobileNavMenu) {
         hamburger.addEventListener('click', function() {
             hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
+            mobileNavMenu.classList.toggle('active');
         });
         
         // Close mobile menu when clicking on a link
-        const navLinks = navMenu.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
+        const mobileNavLinks = mobileNavMenu.querySelectorAll('.nav-link');
+        mobileNavLinks.forEach(link => {
             link.addEventListener('click', function() {
                 hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
+                mobileNavMenu.classList.remove('active');
             });
         });
         
         // Close mobile menu when clicking outside
         document.addEventListener('click', function(event) {
-            if (!hamburger.contains(event.target) && !navMenu.contains(event.target)) {
+            if (!hamburger.contains(event.target) && !mobileNavMenu.contains(event.target)) {
                 hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
+                mobileNavMenu.classList.remove('active');
             }
         });
+    }
+    
+    // Handle RTL toggle for both desktop and mobile
+    const rtlToggleDesktop = document.getElementById('rtlToggle');
+    const rtlToggleMobile = document.getElementById('rtlToggleMobile');
+    
+    function toggleRTL() {
+        const body = document.body;
+        const html = document.documentElement;
+        
+        if (html.getAttribute('dir') === 'rtl') {
+            html.setAttribute('dir', 'ltr');
+            body.classList.remove('rtl');
+            if (rtlToggleDesktop) rtlToggleDesktop.textContent = 'RTL';
+            if (rtlToggleMobile) rtlToggleMobile.textContent = 'RTL';
+        } else {
+            html.setAttribute('dir', 'rtl');
+            body.classList.add('rtl');
+            if (rtlToggleDesktop) rtlToggleDesktop.textContent = 'LTR';
+            if (rtlToggleMobile) rtlToggleMobile.textContent = 'LTR';
+        }
+    }
+    
+    if (rtlToggleDesktop) {
+        rtlToggleDesktop.addEventListener('click', toggleRTL);
+    }
+    
+    if (rtlToggleMobile) {
+        rtlToggleMobile.addEventListener('click', toggleRTL);
     }
     
     // Smooth scrolling for anchor links
